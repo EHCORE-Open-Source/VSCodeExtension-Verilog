@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Verilog",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+                "name": "keyword.control.define.clock.verilog",
+                "match": "^\\s*((neg|pos)?edge)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.mos.verilog",
+                "match": "^\\s*((c|n|p|rc|rn|rp)mos|supply(0|1)|tri(0|1|and|or|reg)?|w(and|or|ire))(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.net.verilog",
+                "match": "^\\s*((scalar|vector)ed)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.port.verilog",
+                "match": "^\\s*(inout|(in|out)put)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.process.verilog",
+                "match": "^\\s*(always|initial)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.register.verilog",
+                "match": "^\\s*(integer|(real)?time|real|reg)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.strength.verilog",
+                "match": "^\\s*(highz(0|1)|large|medium|pull(0|1)|small|strong(0|1)|weak(0|1))(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.define.variable.verilog",
+                "match": "^\\s*(event|parameter|(def|spec)param)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.action.assignment.verilog",
+                "match": "^\\s*((de)?assign|force|release)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.action.block.verilog",
+                "match": "^\\s*(begin|case(x|z)?|end(case|function|module|primitive|specify|table|task)?|fork|function|join|(macro)?module|primitive|specify|table|task)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.action.condition.verilog",
+                "match": "^\\s*(default|disable|else|for(ever)?|if(none)?|repeat|wait|while)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.control.action.gate.verilog",
+                "match": "^\\s*(and|buf(if(0|1))?|n(and|or|ot)|notif(0|1)|or|pull(down|up)|(r)?tran(if(0|1))?|xnor|xor)(?=($|\\s))"
+            }]
+		},
+		"strings": {
+			"name": "string.quoted.double.verilog",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.verilog",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.v"
+}
