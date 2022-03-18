@@ -1,6 +1,7 @@
 #define
 always
 cmos
+param
 defparam
 edge
 event
@@ -55,6 +56,7 @@ and
 assign
 begin
 buf
+bufif01
 bufif0
 bufif1
 case
