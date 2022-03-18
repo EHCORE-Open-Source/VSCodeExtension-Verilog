@@ -4,6 +4,7 @@ cmos
 defparam
 edge
 event
+highz
 highz0
 highz1
 initial
@@ -29,6 +30,7 @@ rpmos
 scalared
 small
 specparam
+strong
 strong0
 strong1
 supply0
@@ -42,6 +44,7 @@ trior
 trireg
 vectored
 wand
+weak
 weak0
 weak1
 wire

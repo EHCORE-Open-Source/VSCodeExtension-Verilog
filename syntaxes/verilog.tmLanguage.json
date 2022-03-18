@@ -17,7 +17,7 @@
             },
             {
                 "name": "keyword.control.define.mos.verilog",
-                "match": "^\\s*((c|n|p|rc|rn|rp)mos|supply(0|1)|tri(0|1|and|or|reg)?|w(and|or|ire))(?=($|\\s))"
+                "match": "^\\s*(r?[cnp]mos|supply[01]|tri([01]|and|or|reg)?|w(and|or|ire))(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.net.verilog",
@@ -37,7 +37,7 @@
             },
             {
                 "name": "keyword.control.define.strength.verilog",
-                "match": "^\\s*(highz(0|1)|large|medium|pull(0|1)|small|strong(0|1)|weak(0|1))(?=($|\\s))"
+                "match": "^\\s*((highz|pull|strong|weak)[01]|large|medium|small)(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.variable.verilog",
@@ -49,7 +49,7 @@
             },
             {
                 "name": "keyword.control.action.block.verilog",
-                "match": "^\\s*(begin|case(x|z)?|end(case|function|module|primitive|specify|table|task)?|fork|function|join|(macro)?module|primitive|specify|table|task)(?=($|\\s))"
+                "match": "^\\s*(begin|case[xz]?|(end)?(case|function|module|primitive|specify|table|task)|end|fork|join|macromodule)(?=($|\\s))"
             },
             {
                 "name": "keyword.control.action.condition.verilog",
@@ -57,7 +57,7 @@
             },
             {
                 "name": "keyword.control.action.gate.verilog",
-                "match": "^\\s*(and|buf(if(0|1))?|n(and|or|ot)|notif(0|1)|or|pull(down|up)|(r)?tran(if(0|1))?|xnor|xor)(?=($|\\s))"
+                "match": "^\\s*(n?and|buf|not|(buf|not)if[01]|pull(down|up)|r?tran(if[01])?|x?n?or)(?=($|\\s))"
             }]
 		},
 		"strings": {
