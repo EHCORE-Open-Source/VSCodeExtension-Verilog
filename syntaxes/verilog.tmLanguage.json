@@ -13,51 +13,63 @@
 		"keywords": {
 			"patterns": [{
                 "name": "keyword.control.define.clock.verilog",
-                "match": "^\\s*((neg|pos)?edge)(?=($|\\s))"
+                "match": "(?<=(^|[ ,(]))(neg|pos)?edge(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.mos.verilog",
-                "match": "^\\s*(r?[cnp]mos|supply[01]|tri([01]|and|or|reg)?|w(and|or|ire))(?=($|\\s))"
+                "match": "(?<=(^|[ ,(]))(r?[cnp]mos|supply[01]|tri([01]|and|or|reg)?|w(and|or|ire))(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.net.verilog",
-                "match": "^\\s*((scalar|vector)ed)(?=($|\\s))"
+                "match": "(?<=(^|\\s))(scalar|vector)ed(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.port.verilog",
-                "match": "^\\s*(inout|(in|out)put)(?=($|\\s))"
+                "match": "(?<=(^|[ ,(]))(inout|(in|out)put)(?=($|\\s))"
             },
             {
-                "name": "keyword.control.define.process.verilog",
-                "match": "^\\s*(always|initial)(?=($|\\s))"
+                "name": "keyword.control.define.always.verilog",
+                "match": "^\\s*always(?=($|[ @]))"
+            },
+            {
+                "name": "keyword.control.define.initial.verilog",
+                "match": "^\\s*initial(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.register.verilog",
-                "match": "^\\s*(integer|(real)?time|real|reg)(?=($|\\s))"
+                "match": "(?<=(^|\\s))(integer|real(time)?|time|reg)(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.strength.verilog",
-                "match": "^\\s*((highz|pull|strong|weak)[01]|large|medium|small)(?=($|\\s))"
+                "match": "(?<=(^|[ ,(]))((highz|pull|strong|weak)[01]|large|medium|small)(?=($|\\s))"
             },
             {
                 "name": "keyword.control.define.variable.verilog",
                 "match": "^\\s*(event|parameter|(def|spec)param)(?=($|\\s))"
             },
             {
-                "name": "keyword.control.action.assignment.verilog",
+                "name": "keyword.other.action.assignment.verilog",
                 "match": "^\\s*((de)?assign|force|release)(?=($|\\s))"
             },
             {
-                "name": "keyword.control.action.block.verilog",
-                "match": "^\\s*(begin|case[xz]?|(end)?(case|function|module|primitive|specify|table|task)|end|fork|join|macromodule)(?=($|\\s))"
+                "name": "keyword.other.action.begin.verilog",
+                "match": "(?<=(^|[ :)]))begin(?=($|\\s))"
             },
             {
-                "name": "keyword.control.action.condition.verilog",
-                "match": "^\\s*(default|disable|else|for(ever)?|if(none)?|repeat|wait|while)(?=($|\\s))"
+                "name": "keyword.other.action.block.verilog",
+                "match": "^\\s*(case[xz]|(end)?(case|function|module|primitive|specify|table|task)|end|fork|join|macromodule)(?=($|\\s))"
             },
             {
-                "name": "keyword.control.action.gate.verilog",
-                "match": "^\\s*(n?and|buf|not|(buf|not)if[01]|pull(down|up)|r?tran(if[01])?|x?n?or)(?=($|\\s))"
+                "name": "keyword.other.action.condition.verilog",
+                "match": "^\\s*(default|disable|for(ever)?|else|ifnone|repeat|wait|while)(?=($|\\s))"
+            },
+            {
+                "name": "keyword.other.action.if.verilog",
+                "match": "(?<=(^|\\s))if(?=($|[ (]))"
+            },
+            {
+                "name": "keyword.other.action.gate.verilog",
+                "match": "(?<=(^|[ ,(]))(n?and|buf|not|(buf|not)if[01]|pull(down|up)|r?tran(if[01])?|x?n?or)(?=($|\\s))"
             }]
 		},
 		"strings": {

@@ -1,71 +1,48 @@
 #define
-always
-cmos
-param
-defparam
-edge
-event
-highz
-highz0
-highz1
+edge , negedge ,posedge edge123
+rcmos (rpmos ,rnmos
+cmos nmos pmos
+supply0 supply1 supply01
+tri tri0 tri1 tri01 
+triand trior trireg
+wand wor wire
+scalared vectored scalar vector
+inout ,inout (inout
+input output
+   always@
+always 
 initial
-inout
-input
-integer
-large
-medium
-negedge
-nmos
-output
+integer real realtime time reg
+highz0 ,highz1 highz01 
+(pull0 pull1
+strong0 strong1
+weak0 weak1 weak
+large medium small
 parameter
-pmos
-posedge
-pull0
-pull1
-rcmos
-real
-realtime
-reg
-rnmos
-rpmos
-scalared
-small
 specparam
-strong
-strong0
-strong1
-supply0
-supply1
-time
-tri
-tri0
-tri1
-triand
-trior
-trireg
-vectored
-wand
-weak
-weak0
-weak1
-wire
-wor
+strong0 strong1
+event
+parameter
+defparam
+specparam
+
 
 #action
-and
 assign
-begin
-buf
-bufif01
-bufif0
-bufif1
+deassign
+force
+release
+begin begin :begin )begin
 case
 casex
 casez
-deassign
-default
-disable
-else
+function
+module
+macromodule
+primitive
+specify
+table
+task
 end
 endcase
 endfunction
@@ -74,37 +51,23 @@ endprimitive
 endspecify
 endtable
 endtask
-for
-force
-forever
 fork
-function
-if
-ifnone
 join
-macromodule
-module
-nand
-nor
-not
-notif0
-notif1
-or
-primitive
-pulldown
-pullup
-release
+default
+disable
+for
+forever
+else
+ifnone
 repeat
-rtran
-rtranif0
-rtranif1
-specify
-table
-task
-tran
-tranif0
-tranif1
 wait
 while
-xnor
-xor
+if if(
+and ,and (nand
+buf not
+bufif0 bufif1 bufif01
+notif0 notif1
+pulldown pullup
+tran tranif0 tranif1
+rtran rtranif0 rtranif1
+xor nor xnor or
