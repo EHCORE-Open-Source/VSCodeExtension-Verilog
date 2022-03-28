@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
                 "name": "keyword.control.define.clock.verilog",
-                "match": "(?<=(^|[ ,(]))(neg|pos)?edge(?=($|\\s))"
+                "match": "(?<=(^|[ ,(]))(neg|pos)?edge(?=($|[ \\[]))"
             },
             {
                 "name": "keyword.control.define.nettype.verilog",

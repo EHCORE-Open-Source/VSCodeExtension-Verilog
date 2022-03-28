@@ -1,5 +1,6 @@
 #define
-edge (negedge clk)
+(negedge clr)
+(edge[10, x0, 1x] clr)
 (posedge clk, negedge rst)
 
 tri[15:0] 
