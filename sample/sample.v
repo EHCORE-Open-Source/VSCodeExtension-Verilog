@@ -1,4 +1,13 @@
-#define
+//define
+ edge (posedge( )negedge)
+[scalared[ ]vectored]
+{event{ }parameter} ,defparam, :specparam:
+;inout; @input@ #output#
+'always' $initial$
+?integer? !real! ~realtime~ |time| ^reg^
++highz0+ -highz1- *pull0* /pull1/
+%strong0% &strong1& =weak0= >weak1> <large< \medium\ medium
+
 (negedge clr)
 (edge[10, x0, 1x] clr)
 (posedge clk, negedge rst)
@@ -54,7 +63,14 @@ wire
 ( supply0, supply1 )
 supply0#300 supply1[30:0] supply0 ()
 
-#action
+//action
+ assign (deassign( )force) [release[ 
+]casex] {casez{ }begin} ,case, :function:
+;module; @primitive@ #specify# 'table' $task$
+?endcase? !endfunction! ~endmodule~ |endprimitive| ^endspecify^
++endtable+ -endtask- *end* /fork/ %join% &macromodule& 
+=default= >disable> <else< \for\ for
+
 assign{i1,i2,i3,i4,i5,i6,i7,i8,i9,i10}
 assign(strong1, pull0)
 assign#300
