@@ -13,51 +13,51 @@
 		"keywords": {
 			"patterns": [{
                 "name": "keyword.control.define.clock.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(neg|pos)?edge(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(neg|pos)?edge(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.net.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(scalar|vector)ed(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(scalar|vector)ed(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
-                "name": "keyword.control.define.parameter.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(event|parameter|(def|spec)param)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "name": "keyword.control.define.parameter.verilog", 
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(event|parameter|(def|spec)param)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.port.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(inout|(in|out)put)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(inout|(in|out)put)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.process.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(always|initial)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(always|initial)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.register.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(integer|real(time)?|time|reg)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(integer|real(time)?|time|reg)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.strength.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))((highz|pull|strong|weak)[01]|large|medium|small)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))((highz|pull|strong|weak)[01]|large|medium|small)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.control.define.switch.nettype.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(r?[cnp]mos|(tri|supply)[01]|tri(and|or|reg)?|w(and|or|ire))(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(r?[cnp]mos|(tri|supply)[01]|tri(and|or|reg)?|w(and|or|ire))(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.other.action.assignment.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))((de)?assign|force|release)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))((de)?assign|force|release)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.other.action.block.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(case[xz]|begin|(end)?(case|function|module|primitive|specify|table|task)|end|fork|join|macromodule)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(case[xz]|begin|(end)?(case|function|module|primitive|specify|table|task)|end|fork|join|macromodule)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.other.action.condition.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(default|disable|else|for(ever)?|if(none)?|repeat|wait|while)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(default|disable|else|for(ever)?|if(none)?|repeat|wait|while)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             },
             {
                 "name": "keyword.other.action.gate.verilog",
-                "match": "(?<=(^|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(n?and|(buf|not|r?tran)(if[01])?|pull(down|up)|x?n?or)(?=($|[ ()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
+                "match": "(?<=(^|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))(n?and|(buf|not|r?tran)(if[01])?|pull(down|up)|x?n?or)(?=($|\\s|[()\\[\\]{},:;@#'$?!~|^+\\-*/%&=><]))"
             }]
 		},
 		"strings": {
